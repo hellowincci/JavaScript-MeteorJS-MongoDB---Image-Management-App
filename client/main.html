@@ -1,76 +1,85 @@
 <head>
-    <title>Image Management App</title>
+  <title>Image Management App</title>
 </head>
 
 <body>
-    <nav class="navbar navbar-default">
-        <div class="container-fluid">
-            <div class="navbar-header">
-                <a class="navbar-brand" href="#" style="font-family:Arvo">Gallery</a>
+  <nav class="navbar navbar-default">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <a class="navbar-brand" href="#" style="font-family:Arvo">Gallery</a>
 
-                <a class="navbar-btn" style="margin-left:650px; margin-right:10px">{{> ImageTemplate}}</a>
-                <a class="navbar-btn"><span class="glyphicon glyphicon-user"></span>{{> loginButtons align="right" }}
-                </a>
-            </div>
-        </div>
-
-    </nav>
-
-
-
-    <h1>Hello {{currentUser.username}},</h1>
-    <p style="text-align:center;font-family:Vollkorn;font-size:24px;font-weight:5px">
-        Organize your photos now and you'll have more time for making photo-worthy memories.</p>
-    {{#if currentUser}}
-
-    <div class="col-lg-12">
-        {{> addImageModal}}
+        <a class="navbar-btn" style="margin-left:650px; margin-right:10px">{{> ImageTemplate}}</a>
+        <a class="navbar-btn">
+          <span class="glyphicon glyphicon-user"></span>{{> loginButtons align="right" }}
+        </a>
+      </div>
     </div>
 
-    <div class="col-lg-12">
-        <p style="text-align:center">{{> displayImage}}
-        </p>
-    </div>
-    {{else}}
-    <h1>Login to upload your images</h1> {{/if}} {{> editImageModal}}
+  </nav>
+
+
+
+  <h1>Hello {{currentUser.username}},</h1>
+  <p style="text-align:center;font-family:Vollkorn;font-size:24px;font-weight:5px">
+    Organize your photos now and you'll have more time for making photo-worthy memories.</p>
+  {{#if currentUser}}
+
+  <div class="col-lg-12">
+    {{> addImageModal}}
+  </div>
+
+  <div class="col-lg-12">
+    <p style="text-align:center">{{> displayImage}}
+    </p>
+  </div>
+  {{else}}
+  <h1>Login to upload your images</h1> {{/if}} {{> editImageModal}}
 </body>
 
 <Template name="displayImage">
   <div class="row">
     <div class="col-lg-16">
-  <h2 style="padding-bottom:10px"> </h2><br/>
-</div>
+      <h2 style="padding-bottom:10px"> </h2>
+      <br/>
+    </div>
 
-  {{#each user}}
-      <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 text-center">
-<div class="thumbnail">
-        <img class="img-thumbnail img-responsive img-center" style="margin:0 auto" src="/{{imgSource}}" >
+    {{#each user}}
+    <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 text-center">
+      <div class="thumbnail">
+        <img class="img-thumbnail img-responsive img-center" style="margin:0 auto" src="/{{imgSource}}">
         <h3>Rating: {{rating}}</h3>
         <center>
-        {{>starsRating mutable=true class="rate-image" id=_id size = 30}}<br/>
-      </center>
-        <div class="alt"><strong>Alternate Text:</strong> {{altText}}</div>
-        <div class="alt"><strong>Author:</strong>
-        <a class="filter">{{userName}}</a></div>
-        <div class="alt"><strong>Description:</strong> {{imgDesc}}</div>
-        <div class="alt"><strong>Date: </strong>{{date}}</div>
-        <br/>
-        {{editingModal}}
+          {{>starsRating mutable=true class="rate-image" id=_id size = 30}}
+          <br/>
+        </center>
+        <div class="alt">
+          <strong>Alternate Text:</strong> {{altText}}</div>
+        <div class="alt">
+          <strong>Author:</strong>
+          <a class="filter">{{userName}}</a>
+        </div>
+        <div class="alt">
+          <strong>Description:</strong> {{imgDesc}}</div>
+        <div class="alt">
+          <strong>Date: </strong>{{date}}</div>
+        <br/> {{editingModal}}
         <button type="button" id="removeImg" class="btn btn-warning">Delete</button>
-        <button type="button" id = "editbtn" class="btn btn-info" data-toggle="modal">Edit Image Details</button><br/>
+        <button type="button" id="editbtn" class="btn btn-info" data-toggle="modal">Edit Image Details</button>
         <br/>
         <br/>
+        <br/>
+      </div>
     </div>
+    {{/each}}
   </div>
-  {{/each}}
-</div>
 </Template>
 
 <Template name="ImageTemplate">
   {{#if filterHelpers}}
-  <button type="button" id= "showAll" class="btn btn-info" style="margin-top:8px">Show All</button>
+  <button type="button" id="showAll" class="btn btn-info" style="margin-top:8px">Show All</button>
   {{/if}}
-  <button type="button" id = "imagebtn" class="btn btn-primary" data-toggle="modal" style="margin-top:8px"><span class="glyphicon glyphicon-plus"></span> Upload Now</button>
+  <button type="button" id="imagebtn" class="btn btn-primary" data-toggle="modal" style="margin-top:8px">
+    <span class="glyphicon glyphicon-plus"></span> Upload Now</button>
 
 
 </Template>
@@ -87,17 +96,20 @@
 
         <div class="modal-body">
           <form>
-          <label for="name">Image source</label>
-            <input type="text" id="imgsource" /><br/>
-          <label for="name">Alternative Text</label>
-            <input type="text" id="alttext" /><br/>
-          <label for="name">Image Description</label>
-          <input type="text" id="imgdescription"/><br/>
-        </form>
+            <label for="name">Image source</label>
+            <input type="text" id="imgsource" />
+            <br/>
+            <label for="name">Alternative Text</label>
+            <input type="text" id="alttext" />
+            <br/>
+            <label for="name">Image Description</label>
+            <input type="text" id="imgdescription" />
+            <br/>
+          </form>
         </div>
 
         <div class="modal-footer">
-          <button type="button" class="btn btn-primary" id="save" >Add</button>
+          <button type="button" class="btn btn-primary" id="save">Add</button>
           <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
         </div>
 
@@ -117,15 +129,16 @@
 
         <div class="modal-body">
           <form>
-          <label for="name">Modifying Alternative Text</label>
-            <input type="text" id="editingAltText" /><br/>
-          <label for="name">Modifying Image Description</label>
-          <input type="text" id="editingImgDescription"/>
-        </form>
+            <label for="name">Modifying Alternative Text</label>
+            <input type="text" id="editingAltText" />
+            <br/>
+            <label for="name">Modifying Image Description</label>
+            <input type="text" id="editingImgDescription" />
+          </form>
         </div>
 
         <div class="modal-footer">
-          <button type="button" class="btn btn-primary" id="saveEdited" >Add</button>
+          <button type="button" class="btn btn-primary" id="saveEdited">Add</button>
           <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
         </div>
 
