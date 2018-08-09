@@ -18,6 +18,8 @@ meteor add msavin:mongol<br/>
 meteor add twbs:bootstrap<br/>
 meteor add barbatus:stars-rating<br/>
 
+## Demo
+
 When the application is launched using localhost:3000, user will be prompted with a welcome message and sign in link. Since this is the first time user visit the page, it will be greeted without an username as shown in Fig. 1.
 
 <p align="center"><img src="https://user-images.githubusercontent.com/39652136/43867259-2d3ce260-9b9b-11e8-9e30-c5a34ea1aabb.PNG">Figure 1: Elements in main page.</p>
