@@ -11,40 +11,41 @@ vi. Allow user to edit the image description and alternate text dynamically and 
 
 When the application is launched using localhost:3000, user will be prompted with a welcome message and sign in link. Since this is the first time user visit the page, it will be greeted without an username as shown in Fig. 1.
 
-![startup](https://user-images.githubusercontent.com/39652136/43867259-2d3ce260-9b9b-11e8-9e30-c5a34ea1aabb.PNG)
-Figure 1: Elements in main page.
+<p align="center"><img src="https://user-images.githubusercontent.com/39652136/43867259-2d3ce260-9b9b-11e8-9e30-c5a34ea1aabb.PNG">Figure 1: Elements in main page.</p>
+
 
 When the sign in link is selected, user can either sign in (Fig.2) or create a new account (Fig.3).
 
-![signin](https://user-images.githubusercontent.com/39652136/43867360-88b4fc7c-9b9b-11e8-8dc1-1848b13be720.PNG)
-Figure 2: Sign in link.
-![create](https://user-images.githubusercontent.com/39652136/43867359-88712326-9b9b-11e8-902b-5ed34902ddd6.PNG)
-Figure 3: Create Account
+<p align="center"><img src="https://user-images.githubusercontent.com/39652136/43867360-88b4fc7c-9b9b-11e8-8dc1-1848b13be720.PNG">
+<br />Figure 2: Sign in link.</p>
+
+<p align="center"><img src="https://user-images.githubusercontent.com/39652136/43867359-88712326-9b9b-11e8-902b-5ed34902ddd6.PNG">
+<br />Figure 3: Create Account</p>
 
 Password validation will be performed. User will be notified when the password entered is not meeting the minimum length requirement (Fig.4). This warning will be shown after user click on the button “Create account”.
 
-![validate](https://user-images.githubusercontent.com/39652136/43867397-aa442606-9b9b-11e8-977e-e9504cde4936.PNG)
-Figure 4: Password validation.
+<p align="center"><img src="https://user-images.githubusercontent.com/39652136/43867397-aa442606-9b9b-11e8-977e-e9504cde4936.PNG"><br \>
+Figure 4: Password validation.</p>
 
 After successfully created user’s account, user is automatically logged in and greeting is personalized based on user name as shown in Fig.5.
 
-![myname](https://user-images.githubusercontent.com/39652136/43867423-c6b0945a-9b9b-11e8-932e-cfd279e8656b.PNG)
-Figure 5: Personalized greeting.
+<p align="center"><img src="https://user-images.githubusercontent.com/39652136/43867423-c6b0945a-9b9b-11e8-932e-cfd279e8656b.PNG"><br />
+Figure 5: Personalized greeting.</p>
 
 Two options as shown in Fig. 6 allow user to sign out or change password when he/she click on the username link (top left).
 
-![changedtosignout](https://user-images.githubusercontent.com/39652136/43867476-010ddbb2-9b9c-11e8-85d1-22ff8cba93de.PNG)
-Figure 6: Change password and Sign out option.
+<p align="center"><img src="https://user-images.githubusercontent.com/39652136/43867476-010ddbb2-9b9c-11e8-85d1-22ff8cba93de.PNG"><br />
+Figure 6: Change password and Sign out option.</p>
 
 Fig.7 shows the user interface when “change password” option is selected by user. The current password must match with the initial password used to create the account in order for the function “change password” to be executed.
 
-![changepw](https://user-images.githubusercontent.com/39652136/43867489-13896b3a-9b9c-11e8-9411-2636fbe31e04.PNG)
-Figure 7: Change password
+<p align="center"><img src="https://user-images.githubusercontent.com/39652136/43867489-13896b3a-9b9c-11e8-9411-2636fbe31e04.PNG"><br/>
+Figure 7: Change password</p>
 
 User will be prompted a successful/unsuccessful message. Example of successful password change is shown in Fig.8.
 
-![changedx](https://user-images.githubusercontent.com/39652136/43867501-22374940-9b9c-11e8-9866-09a29e2a1d62.PNG)
-Figure 8: Successful password change.
+<p align="center"><img src="https://user-images.githubusercontent.com/39652136/43867501-22374940-9b9c-11e8-9866-09a29e2a1d62.PNG"><br />
+Figure 8: Successful password change.</p>
 
 Only logged in user will see the add image button. When they click on the button, a pop up window is used to obtain user input as shown in Fig. 9. Fig.10 shows an example of completed form while Fig.11 shows the output of the added image. For each added image, a list of information (Rating, Alternate text, User who added the image, Description of the image, Star symbol for user to rate and Delete button) is contained together with the image.
 
