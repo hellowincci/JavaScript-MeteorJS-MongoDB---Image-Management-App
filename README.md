@@ -39,7 +39,7 @@ Figure 6: Change password and Sign out option.</p>
 
 Fig.7 shows the user interface when “change password” option is selected by user. The current password must match with the initial password used to create the account in order for the function “change password” to be executed.
 
-<p align="center"><img src="https://user-images.githubusercontent.com/39652136/43867489-13896b3a-9b9c-11e8-9411-2636fbe31e04.PNG"><br/>
+<p align="center"><img src="https://user-images.githubusercontent.com/39652136/43867489-13896b3a-9b9c-11e8-9411-2636fbe31e04.PNG"><br />
 Figure 7: Change password</p>
 
 User will be prompted a successful/unsuccessful message. Example of successful password change is shown in Fig.8.
@@ -55,12 +55,12 @@ Figure 9: Add image pop up.</p>
 <p align="center"><img src="https://user-images.githubusercontent.com/39652136/43867542-3f04a716-9b9c-11e8-85b1-47709debfd68.PNG"><br />
 Figure 10: Completed form.</p>
 
-<p align="center"><img src="https://user-images.githubusercontent.com/39652136/43867571-5cda1ce4-9b9c-11e8-9fe1-f71e216b287a.PNG<br />
+<p align="center"><img src="https://user-images.githubusercontent.com/39652136/43867571-5cda1ce4-9b9c-11e8-9fe1-f71e216b287a.PNG"<br />
   Figure 11: Image display on webpage with complete information.</p>
 
 Additionally, user can add unlimited images into the application using the same method. Fig. 12 shows example of user adding another image, Fig. 13 displays the added image with its relevant information. Each new added image will be displayed in front of the image added previously.
 
-<p align="center"><img src="https://user-images.githubusercontent.com/39652136/43867590-6ffff5b4-9b9c-11e8-8484-b05874a754d6.PNG><br />
+<p align="center"><img src="https://user-images.githubusercontent.com/39652136/43867590-6ffff5b4-9b9c-11e8-8484-b05874a754d6.PNG"><br />
   Figure 12: Add another image.</p>
 
 <p align="center"><img src="https://user-images.githubusercontent.com/39652136/43867610-7dddea24-9b9c-11e8-9e1e-10718d32b316.PNG"><br />
@@ -68,7 +68,7 @@ Figure 13: Display of both added image sorted by recent to older.</p>
 
 Initially, the rating label has an empty value. User is able to rate the image by selecting the number of stars located below each image as shown in Fig. 14. The number of star will be updated in the rating column once user clicked on the star.
 
-<p align="center"><img src="https://user-images.githubusercontent.com/39652136/43867644-9e2d7254-9b9c-11e8-9285-aecc04e85e42.PNG><br />
+<p align="center"><img src="https://user-images.githubusercontent.com/39652136/43867644-9e2d7254-9b9c-11e8-9285-aecc04e85e42.PNG"><br />
   Figure 14: Rating with star symbol.</p>
 
 The same application allows different user to login and add images. The images added will be labeled with different user as shown on Fig. 15.
