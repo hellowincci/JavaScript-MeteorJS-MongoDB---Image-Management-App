@@ -1,4 +1,5 @@
-# JavaScript-MeteorJS-MongoDB---Image-Management-App
+# Simple Image Management App using MeteorJS and MongoDB
+
 This project is to produce an application which manages lists of images using JavaScript library (Meteor js) and MongoDB. It allows users to perform the following functions:<br /> 
 i. User sign up, login, logout and change password <br /> 
 ii. Add image by providing image file name or link to the image <br /> 
@@ -7,7 +8,15 @@ iv. Display added image sorted by date added from recently to old <br />
 v. Allow other user to login and add images. Allow user to filter image based on selected user<br /> 
 vi. Allow user to edit the image description and alternate text dynamically and update the edited information into database<br /> 
 
-
+## Prerequisites
+Things you need to install/get development env running:<br/>
+meteor npm install @babel/runtime@7.0.0-beta.55 <br/>
+meteor add session<br/>
+meteor add accounts-base<br/>
+meteor add accounts-ui accounts-password<br/>
+meteor add msavin:mongol<br/>
+meteor add twbs:bootstrap<br/>
+meteor add barbatus:stars-rating<br/>
 
 When the application is launched using localhost:3000, user will be prompted with a welcome message and sign in link. Since this is the first time user visit the page, it will be greeted without an username as shown in Fig. 1.
 
