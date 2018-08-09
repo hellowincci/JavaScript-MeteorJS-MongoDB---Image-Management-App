@@ -55,7 +55,7 @@ Figure 9: Add image pop up.</p>
 <p align="center"><img src="https://user-images.githubusercontent.com/39652136/43867542-3f04a716-9b9c-11e8-85b1-47709debfd68.PNG"><br />
 Figure 10: Completed form.</p>
 
-<p align="center"><img src="https://user-images.githubusercontent.com/39652136/43867571-5cda1ce4-9b9c-11e8-9fe1-f71e216b287a.PNG"<br />
+<p align="center"><img src="https://user-images.githubusercontent.com/39652136/43867571-5cda1ce4-9b9c-11e8-9fe1-f71e216b287a.PNG"><br />
   Figure 11: Image display on webpage with complete information.</p>
 
 Additionally, user can add unlimited images into the application using the same method. Fig. 12 shows example of user adding another image, Fig. 13 displays the added image with its relevant information. Each new added image will be displayed in front of the image added previously.
@@ -78,7 +78,7 @@ Figure 15: User1 logged in and add one image shown on the left.</p>
 
 The application allows images to be sorted based on user who added the images. When the link on user is clicked, only images created by that particular user will be shown (Fig. 16). On the same page, user can navigate to see all images by clicking on the link “Show all images” (Fig. 16 and Fig. 17).
 <p align="center"><img src="https://user-images.githubusercontent.com/39652136/43867690-d61d779a-9b9c-11e8-9586-b1165e7ba801.PNG"></p>
-!<p align="center"><img src="https://user-images.githubusercontent.com/39652136/43867689-d5df3462-9b9c-11e8-9573-2ac9987de452.PNG"><br />
+<p align="center"><img src="https://user-images.githubusercontent.com/39652136/43867689-d5df3462-9b9c-11e8-9573-2ac9987de452.PNG"><br />
 Figure 16: Showing only images added by user1</p>
 
 <p align="center"><img src="https://user-images.githubusercontent.com/39652136/43867688-d5a5d618-9b9c-11e8-8174-519c618864fd.PNG"><br />
